@@ -1,3 +1,4 @@
+import os
 import spacy
 from spanbert import SpanBERT
 
@@ -32,7 +33,7 @@ def process(results, r):
     nlp = spacy.load("en_core_web_lg")  
 
     # Load pre-trained SpanBERT model
-    spanbert = SpanBERT("./pretrained_spanbert")
+    spanbert = SpanBERT("{}/pretrained_spanbert".format(os.path.abspath(__file__)[:-7]))
 
     for result in results:
         doc = nlp(result["content"])
