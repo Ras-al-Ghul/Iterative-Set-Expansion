@@ -28,7 +28,7 @@ def main():
     results = sc.search(q)
     sc.extract_content(results)
 
-    ise.process(results)
+    ise.process(results, r)
 
 
 if __name__ == '__main__':
