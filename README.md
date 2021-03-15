@@ -27,15 +27,12 @@ An implementation using BERT to iteratively find the tuples of a given realtion
   </ul>
 </li>
 <li>README.md</li>
-<li>requirements.txt</li>
-<li>setup.py</li>
-<li>stop_words.txt</li>
-<li>test_queries_transcript.txt</li>
+<li>.gitignore</li>
 </ol>
 
 ## Steps to install and run
 
-<p>Install the rquirements from requirements.txt using the below command.</p>
+<p>Install the rquirements from requirements.txt present in iterative_set_expansion using the below command.</p>
 
 ```
  pip3 install -r requirements.txt
@@ -44,12 +41,16 @@ An implementation using BERT to iteratively find the tuples of a given realtion
 <p>Run the program using the following command.</p>
 
 ```
-python3 -m query_expansion <query> <precision>
-```
-<p>Where query is a string of words that you want to search and precision is a decimal value. For example,</p>
+python3 itreative_set_expansion <r> <t> <q> <k>
 
-```
-python3 -m query_expansion "this is the query" 0.9
+r - int with values 1,2,3,4. where 1 is Schools_Attended, 2 - Work_For, 3 - Live_In, 4- Top_Member_Emloyee  
+t - float between 0 and 1 indication extraction confidence threshold
+q - string seed query of plausible tuple
+k - int greater than 0 indication number of tuples wanted
+
+For example,
+
+python3 iertative_set_expansion 4 0.7 "bill gates microsoft" 10
 ```
 
 ## Design
