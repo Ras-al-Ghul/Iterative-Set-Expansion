@@ -24,11 +24,33 @@ def main():
         except:
             print_usage_help()
 
-    print("Query tuple: ", q)
-    results = sc.search(q)
-    sc.extract_content(results)
 
-    ise.process(results, r)
+    no_of_extracted_tuples = 0
+    visited_url = set()
+    iter_count = 0;
+    while(no_of_extracted_tuples < k):
+        print("Query tuple: ", q)
+        print("Iteration :", iter_count)
+        results = sc.search(q)
+        results = [result for result in results if result['url'] not in visited_url]
+
+        sc.extract_content(results)
+
+        for result in results:
+            visited_url.add(result['url'])
+
+        ise_results = ise.process(results, r, t)
+        for result in ise_results:
+            print(result)
+
+        # TODO filter results to remove repeated data
+        no_of_extracted_tuples = len(ise_results)
+
+        if(no_of_extracted_tuples < k):
+            #TODO extract the top tuple
+            q = ise_results[0]['Subject']+ ' ' + ise_results[0]['Object']
+
+        iter_count += 1
 
 
 if __name__ == '__main__':
