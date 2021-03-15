@@ -3,6 +3,7 @@ import threading
 
 import search_scrape as sc
 import ise
+import operator
 
 def print_usage_help():
     print("python3 -m iterative_set_expansion <r> <t> <q> <k>")
@@ -27,31 +28,54 @@ def main():
 
     no_of_extracted_tuples = 0
     visited_url = set()
-    iter_count = 0;
+    iter_count = 0
+    final_result = dict()
+    used_queries = set()
+    used_queries.add(q)
+
     while(no_of_extracted_tuples < k):
+        print("===============Iteration :", iter_count,"=====================")
         print("Query tuple: ", q)
-        print("Iteration :", iter_count)
         results = sc.search(q)
         results = [result for result in results if result['url'] not in visited_url]
 
+        if(len(results) == 0):
+            print("All urls visited");
+            break;
+
+        print("Extracting and truncating the content to 20,000 characters.")
         sc.extract_content(results)
 
         for result in results:
             visited_url.add(result['url'])
 
         ise_results = ise.process(results, r, t)
-        for result in ise_results:
-            print(result)
 
-        # TODO filter results to remove repeated data
-        no_of_extracted_tuples = len(ise_results)
+        for result in ise_results:
+            key = (result['Subject'], result['Object'])
+            if key in final_result.keys():
+                if final_result[key] < result['Confidence']:
+                    final_result[key] = result['Confidence']
+            else:
+                final_result[key] = result['Confidence']
+
+
+        #print(final_result)
+        final_result_sorted = dict(sorted(final_result.items(), key=operator.itemgetter(1), reverse=True))
+        #print(final_result_sorted)
+        no_of_extracted_tuples = len(final_result_sorted)
 
         if(no_of_extracted_tuples < k):
-            #TODO extract the top tuple
-            q = ise_results[0]['Subject']+ ' ' + ise_results[0]['Object']
+            for result in final_result_sorted.keys():
+                if result not in used_queries:
+                    q = ' '.join(result)
+                    used_queries.add(q)
+                    break;
 
         iter_count += 1
 
+        for result in final_result_sorted:
+            print(result, final_result_sorted[result])
 
 if __name__ == '__main__':
     main()
