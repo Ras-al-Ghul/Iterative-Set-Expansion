@@ -61,3 +61,5 @@ Processed 10  sentences
 ('Will Smith', 'the Bay Area') 0.9786309
 ('Rapinoe', 'Seattle') 0.96446526
 ('Nathan Blaze', 'Redding') 0.7860277
+
+Finished in 1 iterations.

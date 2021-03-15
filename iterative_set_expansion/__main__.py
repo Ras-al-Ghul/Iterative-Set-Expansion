@@ -90,6 +90,7 @@ def main():
 
         for result in final_result_sorted:
             print(result, final_result_sorted[result])
+        print("\nFinished in {} iterations.".format(iter_count+1))
 
 if __name__ == '__main__':
     main()

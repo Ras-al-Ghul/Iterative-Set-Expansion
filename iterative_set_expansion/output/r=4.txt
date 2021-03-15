@@ -132,3 +132,5 @@ Adding to set of extracted relations
 ('Microsoft', 'Bill') 0.8827385
 ('Baidu', 'Robin Li') 0.83987486
 ('the Bill & Melinda Gates Foundation', 'Gates') 0.830619
+
+Finished in 1 iterations.

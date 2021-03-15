@@ -176,3 +176,5 @@ Processed 5  sentences
 ('EventsAboutNewsletter SignupHarvard Kennedy', 'EEA Privacy DisclosuresLand') 0.86149913
 ('Cameron Winklevoss', 'Harvard') 0.8532336
 ('Zuckerberg', 'Facebook') 0.8358919
+
+Finished in 2 iterations.

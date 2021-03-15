@@ -112,3 +112,5 @@ Processed 5  sentences
 ('Roger Stone', 'Politico Legal') 0.8732434
 ('Roger Stone', 'CRISTIANO LIMA 12/11/2018') 0.8058624
 ("Sundar Pichai's", 'CRISTIANO LIMA 12/11/2018') 0.76780075
+
+Finished in 1 iterations.
