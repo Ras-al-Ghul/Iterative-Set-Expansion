@@ -52,16 +52,16 @@ def process(results, r, t):
         result = results[idx]
         print('url (', idx, '/10)', result['url'])
         doc = nlp(result["content"])
-        print("Length of content :", len(result["content"]))
+        #print("Length of content :", len(result["content"]))
 
-        print("ISE processing...")
+        #print("ISE processing...")
         sentence_count = 0
 
         for sentence in doc.sents:
-            print("\n\nProcessing sentence: {}".format(sentence))
-            print("Tokenized sentence: {}".format([token.text for token in sentence]))
+            #print("\n\nProcessing sentence: {}".format(sentence))
+            #print("Tokenized sentence: {}".format([token.text for token in sentence]))
             ents = shf.get_entities(sentence, entities_of_interest)
-            print("spaCy extracted entities: {}".format(ents))
+            #print("spaCy extracted entities: {}".format(ents))
             
             # create entity pairs
             candidate_pairs = []
