@@ -34,7 +34,7 @@ def get_document_content(url):
     try:
         html_doc = requests.get(url, timeout=1).text
         #pprint(html_doc.content)
-        soup = BeautifulSoup(html_doc, 'html5lib')
+        soup = BeautifulSoup(html_doc, 'html.parser')
         data = soup.findAll('p')
         data = [p.get_text().replace('\n', '').replace('\t', '') for p in data]
         data = " ".join(data) if data else " "
