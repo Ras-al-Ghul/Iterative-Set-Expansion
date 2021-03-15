@@ -2,4 +2,4 @@ adb/*
 __pycache__/*
 iterative_set_expansion/__pycache__/*
 iterative_set_expansion/pretrained_spanbert/*
-
+iterative_set_expansion/pytorch_pretrained_bert/__pycache__/*
