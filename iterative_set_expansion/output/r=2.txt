@@ -1,162 +1,114 @@
-Microsoft Windows [Version 10.0.19041.867]
-(c) 2020 Microsoft Corporation. All rights reserved.
-
-(base) C:\Users\nidhe\Documents\Columbia\2021_Spring\AdvanceDatabases\Project2\Iterative-Set-Expansion>python iterative_set_expansion 2 0.7 "sundar pichai google" 10
+Search Engine Id:  14e471d67764dc04d
+Client key:  AIzaSyAENB1D2LxKbqSmJqdRSKaRVT67_XSKJ_c
+Relations: per:employee_of
+Threshold:  0.7
+# of tuples:  10
+Query tuple:  sundar pichari google
 ===============Iteration : 0 =====================
-Query tuple:  sundar pichai google
 Extracting and truncating the content to 20,000 characters.
-Loading pre-trained spanBERT from C:\Users\nidhe\Documents\Columbia\2021_Spring\AdvanceDatabases\Project2\Iterative-Set-Expansion\iterative_set_expansion/pretrained_spanbert
-url ( 0 /10) https://en.wikipedia.org/wiki/Sundar_Pichai
+Loading pre-trained spanBERT from /home/nra2125/Iterative-Set-Expansion/iterative_set_expansion/pretrained_spanbert
+url ( 0 /10) https://www.politico.com/story/2018/12/11/alex-jones-roger-stone-google-ceo-hearing-1055994
 ========Extracted Relation============
-Sentence : In 2013, Pichai added Android to the list of Google products that he oversaw.
-Confidence: 0.7732075 Subject: Pichai Object: Google
+Sentence : Chased by Info Wars' Alex Jones (background, over shoulder), Capitol Hill Police officers direct Sundar Pichari, CEO of Google, to his hearing room for a House Judiciary Committee Hearing.
+Confidence: 0.8813934 Subject: Sundar Pichari Object: Google
 Adding to set of extracted relations
 =================
 ========Extracted Relation============
-Sentence : Pichai was selected to become the next CEO of Google on August 10, 2015, after previously being appointed Product Chief by CEO, Larry Page.
-Confidence: 0.9970765 Subject: Pichai Object: Google
+Sentence : | M. Scott Mahaskey/Politico Legal  By CRISTIANO LIMA 12/11/2018 10:08 AM EST Infowars founder Alex Jones and longtime Trump associate Roger Stone made an appearance outside Google CEO Sundar Pichai's hearing before the House Judiciary committee today.
+Confidence: 0.97838545 Subject: Alex Jones Object: Politico Legal
 Adding to set of extracted relations
 =================
 ========Extracted Relation============
-Sentence : Pichai was selected to become the next CEO of Google on August 10, 2015, after previously being appointed Product Chief by CEO, Larry Page.
-Confidence: 0.99728286 Subject: Larry Page Object: Google
+Sentence : | M. Scott Mahaskey/Politico Legal  By CRISTIANO LIMA 12/11/2018 10:08 AM EST Infowars founder Alex Jones and longtime Trump associate Roger Stone made an appearance outside Google CEO Sundar Pichai's hearing before the House Judiciary committee today.
+Confidence: 0.8732434 Subject: Roger Stone Object: Politico Legal
 Adding to set of extracted relations
 =================
+========Extracted Relation============
+Sentence : | M. Scott Mahaskey/Politico Legal  By CRISTIANO LIMA 12/11/2018 10:08 AM EST Infowars founder Alex Jones and longtime Trump associate Roger Stone made an appearance outside Google CEO Sundar Pichai's hearing before the House Judiciary committee today.
+Confidence: 0.9901034 Subject: Sundar Pichai's Object: Politico Legal
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : | M. Scott Mahaskey/Politico Legal  By CRISTIANO LIMA 12/11/2018 10:08 AM EST Infowars founder Alex Jones and longtime Trump associate Roger Stone made an appearance outside Google CEO Sundar Pichai's hearing before the House Judiciary committee today.
+Confidence: 0.6657575 Subject: Alex Jones Object: CRISTIANO LIMA 12/11/2018
+Confidence is lower than threshold confidence. Ignoring this.
+=================
+========Extracted Relation============
+Sentence : | M. Scott Mahaskey/Politico Legal  By CRISTIANO LIMA 12/11/2018 10:08 AM EST Infowars founder Alex Jones and longtime Trump associate Roger Stone made an appearance outside Google CEO Sundar Pichai's hearing before the House Judiciary committee today.
+Confidence: 0.8058624 Subject: Roger Stone Object: CRISTIANO LIMA 12/11/2018
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : | M. Scott Mahaskey/Politico Legal  By CRISTIANO LIMA 12/11/2018 10:08 AM EST Infowars founder Alex Jones and longtime Trump associate Roger Stone made an appearance outside Google CEO Sundar Pichai's hearing before the House Judiciary committee today.
+Confidence: 0.76780075 Subject: Sundar Pichai's Object: CRISTIANO LIMA 12/11/2018
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : | M. Scott Mahaskey/Politico Legal  By CRISTIANO LIMA 12/11/2018 10:08 AM EST Infowars founder Alex Jones and longtime Trump associate Roger Stone made an appearance outside Google CEO Sundar Pichai's hearing before the House Judiciary committee today.
+Confidence: 0.9953882 Subject: Alex Jones Object: Trump
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : | M. Scott Mahaskey/Politico Legal  By CRISTIANO LIMA 12/11/2018 10:08 AM EST Infowars founder Alex Jones and longtime Trump associate Roger Stone made an appearance outside Google CEO Sundar Pichai's hearing before the House Judiciary committee today.
+Confidence: 0.99693197 Subject: Roger Stone Object: Trump
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : | M. Scott Mahaskey/Politico Legal  By CRISTIANO LIMA 12/11/2018 10:08 AM EST Infowars founder Alex Jones and longtime Trump associate Roger Stone made an appearance outside Google CEO Sundar Pichai's hearing before the House Judiciary committee today.
+Confidence: 0.93801206 Subject: Sundar Pichai's Object: Trump
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : | M. Scott Mahaskey/Politico Legal  By CRISTIANO LIMA 12/11/2018 10:08 AM EST Infowars founder Alex Jones and longtime Trump associate Roger Stone made an appearance outside Google CEO Sundar Pichai's hearing before the House Judiciary committee today.
+Confidence: 0.9651535 Subject: Roger Stone Object: the House Judiciary
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : Jones also crashed a congressional hearing in September where Twitter CEO Jack Dorsey and Facebook Chief Operating Officer Sheryl Sandberg testified.
+Confidence: 0.5487565 Subject: Jack Dorsey Object: Twitter
+Confidence is lower than threshold confidence. Ignoring this.
+=================
+url ( 1 /10) https://9to5google.com/2017/10/30/sundar-pichari-android-cheeseburger-emoji/
+========Extracted Relation============
+Sentence : In response to the viral tweet, Google CEO Sundar Pichai chimed in stating that he would “drop everything” and fix this on Monday, provided that the proper order can be figured out.
+Confidence: 0.9866385 Subject: Sundar Pichai Object: Google
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : https://t.co/dXRuZnX1Ag — Sundar Pichai (@sundarpichai) October 29, 2017  Check out 9to5Google on YouTube for more news:
+Confidence: 0.9346866 Subject: Sundar Pichai Object: YouTube
+Adding to set of extracted relations
+=================
+url ( 2 /10) https://es-la.facebook.com/TULeadership/posts/sundar-pichari-is-the-ceo-of-google-this-is-his-best-career-advice-about-followi/10156546311353064/
+url ( 3 /10) https://www.youtube.com/watch?v=DXyU0LOqKPM
+url ( 4 /10) https://www.cnbc.com/2017/04/28/google-ceo-sundar-pichais-compensation-doubled-in-2016-to-200-million.html
+========Extracted Relation============
+Sentence : Diane Greene, now senior vice president for Google's cloud operations, earned total compensation of $43.7 million last year, most of it via two stock awards totaling $42.8 million.
+Confidence: 0.99669814 Subject: Diane Greene Object: Google
+Adding to set of extracted relations
+=================
+url ( 5 /10) https://www.indiatoday.in/sports/cricket/story/sundar-pichari-congratulates-india-after-gabba-win-border-gavaskar-series-1760581-2021-01-19
+url ( 6 /10) https://www.bbc.com/news/uk-england-hereford-worcester-38990254
+========Extracted Relation============
+Sentence : Mr Pichai, who rose from humble beginnings in India, was appointed Google's CEO in 2015.
+Confidence: 0.9962382 Subject: Mr Pichai Object: Google
+Adding to set of extracted relations
+=================
+url ( 7 /10) https://www.business-standard.com/article/companies/salary-optics-why-google-ceo-sundar-pichai-turned-down-a-big-stock-award-119052901149_1.html
+url ( 8 /10) https://timesofindia.indiatimes.com/business/india-business/covid-19-google-ceo-sundar-pichai-donates-rs-5-crore-to-give-india/articleshow/75117832.cms
+url ( 9 /10) https://theoutline.com/post/4492/google-io-2018-world-dispatch
 Processed 5  sentences
-========Extracted Relation============
-Sentence : Pichai was born in Chennai, Tamil Nadu, India.[6][7][8]His mother, Lakshmi, was a stenographer, and his father, Regunatha Pichai, was an electrical engineer at GEC, the Brit
-ish conglomerate.
-Confidence: 0.94423187 Subject: Regunatha Pichai Object: GEC
-Adding to set of extracted relations
-=================
-========Extracted Relation============
-Sentence : Pichai joined Google in 2004, where he led the product management and innovation efforts for a suite of Google's client software products, including Google Chrome[18] and Ch
-rome OS, as well as being largely responsible for Google Drive.
-Confidence: 0.9740768 Subject: Pichai Object: Google
-Adding to set of extracted relations
-=================
-========Extracted Relation============
-Sentence : On March 13, 2013, Pichai added Android to the list of Google products that he oversaw.
-Confidence: 0.7732075 Subject: Pichai Object: Google
-Adding to set of extracted relations
-=================
-Processed 10  sentences
-========Extracted Relation============
-Sentence : Pichai was selected to become the next CEO of Google on August 10, 2015[27] after previously being appointed Product Chief by CEO, Larry Page.
-Confidence: 0.9970765 Subject: Pichai Object: Google
-Adding to set of extracted relations
-=================
-========Extracted Relation============
-Sentence : Pichai was selected to become the next CEO of Google on August 10, 2015[27] after previously being appointed Product Chief by CEO, Larry Page.
-Confidence: 0.9971773 Subject: Larry Page Object: Google
-Adding to set of extracted relations
-=================
-========Extracted Relation============
-Sentence : Pichai had been suggested as a contender for Microsoft's CEO in 2014, a position that was eventually given to Satya Nadella.[30][31]
-Confidence: 0.8829768 Subject: Satya Nadella.[30][31 Object: Microsoft
-Adding to set of extracted relations
-=================
-Processed 15  sentences
-url ( 1 /10) https://twitter.com/sundarpichai?lang=en
-url ( 2 /10) https://blog.google/inside-google/company-announcements/commitments-racial-equity/
-========Extracted Relation============
-Sentence : That includes our Chief Diversity Officer Melonie Parker and the Employee Engagement team, our Equity Project Management Office working in partnership with our Black Leaders
-hip Advisory Group and members of our Black Googler Network, and everyone who has stepped up with ideas on how we can build a better workplace, and, in turn, better products for the wo
-rld.
-Confidence: 0.97068644 Subject: Melonie Parker Object: Equity Project Management Office
-Adding to set of extracted relations
-=================
-========Extracted Relation============
-Sentence : That includes our Chief Diversity Officer Melonie Parker and the Employee Engagement team, our Equity Project Management Office working in partnership with our Black Leaders
-hip Advisory Group and members of our Black Googler Network, and everyone who has stepped up with ideas on how we can build a better workplace, and, in turn, better products for the wo
-rld.
-Confidence: 0.89033324 Subject: Melonie Parker Object: Black Leadership Advisory Group
-Adding to set of extracted relations
-=================
-========Extracted Relation============
-Sentence : That includes our Chief Diversity Officer Melonie Parker and the Employee Engagement team, our Equity Project Management Office working in partnership with our Black Leaders
-hip Advisory Group and members of our Black Googler Network, and everyone who has stepped up with ideas on how we can build a better workplace, and, in turn, better products for the wo
-rld.
-Confidence: 0.9671834 Subject: Melonie Parker Object: Black Googler Network
-Adding to set of extracted relations
-=================
-url ( 3 /10) https://www.youtube.com/watch?v=o6zfp6lRw2E
-url ( 4 /10) https://blog.google/perspectives/sundar-pichai/
-========Extracted Relation============
-Sentence : CEO of Google and Alphabet Sundar is the CEO of Google and Alphabet and serves on Alphabet’s Board of Directors.
-Confidence: 0.9960083 Subject: Alphabet Sundar Object: Google
-Adding to set of extracted relations
-=================
-========Extracted Relation============
-Sentence : CEO of Google and Alphabet Sundar is the CEO of Google and Alphabet and serves on Alphabet’s Board of Directors.
-Confidence: 0.99620396 Subject: Alphabet Sundar Object: Google
-Adding to set of extracted relations
-=================
-========Extracted Relation============
-Sentence : CEO of Google and Alphabet Sundar is the CEO of Google and Alphabet and serves on Alphabet’s Board of Directors.
-Confidence: 0.9962334 Subject: Alphabet Sundar Object: Alphabet’s Board of Directors
-Adding to set of extracted relations
-=================
-url ( 5 /10) https://www.youtube.com/watch?v=mpfxsvBPWEs
-url ( 6 /10) https://www.cnbc.com/2019/02/01/how-google-ceos-brilliant-answer-in-a-job-interview-helped-him-get-hired.html
-========Extracted Relation============
-Sentence : Laszlo Bock, Google's former senior VP of people operations, calls it one of the top qualities he looks for in a candidate.
-Confidence: 0.9918338 Subject: Laszlo Bock Object: Google
-Adding to set of extracted relations
-=================
-========Extracted Relation============
-Sentence : Laszlo Bock, Google's former senior VP of people operations, calls it one of the top qualities he looks for in a candidate.
-Confidence: 0.9970813 Subject: Laszlo Bock Object: VP
-Adding to set of extracted relations
-=================
-========Extracted Relation============
-Sentence : Tom Popomaronis is the Senior Director of Product Innovation at the Hawkins Group.
-Confidence: 0.9959684 Subject: Tom Popomaronis Object: the Hawkins Group
-Adding to set of extracted relations
-=================
-url ( 7 /10) https://www.blog.google/technology/ai/ai-principles/
-url ( 8 /10) https://www.cnbc.com/2018/12/11/google-ceo-sundar-pichai-testifies-before-congress-on-bias-privacy.html
-========Extracted Relation============
-Sentence : This is the first time Pichai has appeared before Congress since Google declined to send him or Alphabet CEO Larry Page to a hearing on foreign election meddling earlier thi
-s year.
-Confidence: 0.9760649 Subject: Larry Page Object: Google
-Adding to set of extracted relations
-=================
-Processed 5  sentences
-========Extracted Relation============
-Sentence : One of the first specific questions about Google's plans in China came from Rep. Sheila Jackson Lee (D-Tx.) who expressed concern that Google would aid in the oppression of
-Chinese people "looking for a lifeline of freedom and democracy."
-Confidence: 0.98604214 Subject: Sheila Jackson Lee Object: Google
-Adding to set of extracted relations
-=================
-Processed 10  sentences
-Processed 15  sentences
-url ( 9 /10) https://www.britannica.com/biography/Sundar-Pichai
-========Extracted Relation============
-Sentence : Sundar Pichai, in full Pichai Sundararajan,  (born July 12, 1972, Madras [now Chennai], Tamil Nadu, India), Indian-born American executive who was CEO of both Google, Inc. (
-2015– ), and its holding company, Alphabet Inc. (2019– ).
-Confidence: 0.9971136 Subject: Pichai Sundararajan Object: Google, Inc.
-Adding to set of extracted relations
-=================
-========Extracted Relation============
-Sentence : Therefore, when Google cofounders Larry Page and Sergey Brin announced the creation of Alphabet Inc., in August 2015, it came as no surprise to industry insiders that Pichai
- was named CEO of Google, which was reorganized as a subsidiary.
-Confidence: 0.98404586 Subject: Larry Page Object: Google
-Adding to set of extracted relations
-=================
-('Larry Page', 'Google') 0.99728286
-('Pichai Sundararajan', 'Google, Inc.') 0.9971136
-('Laszlo Bock', 'VP') 0.9970813
-('Pichai', 'Google') 0.9970765
-('Alphabet Sundar', 'Alphabet’s Board of Directors') 0.9962334
-('Alphabet Sundar', 'Google') 0.99620396
-('Tom Popomaronis', 'the Hawkins Group') 0.9959684
-('Laszlo Bock', 'Google') 0.9918338
-('Sheila Jackson Lee', 'Google') 0.98604214
-('Melonie Parker', 'Equity Project Management Office') 0.97068644
-('Melonie Parker', 'Black Googler Network') 0.9671834
-('Regunatha Pichai', 'GEC') 0.94423187
-('Melonie Parker', 'Black Leadership Advisory Group') 0.89033324
-('Satya Nadella.[30][31', 'Microsoft') 0.8829768
-
-(base) C:\Users\nidhe\Documents\Columbia\2021_Spring\AdvanceDatabases\Project2\Iterative-Set-Expansion>
+('Roger Stone', 'Trump') 0.99693197
+('Diane Greene', 'Google') 0.99669814
+('Mr Pichai', 'Google') 0.9962382
+('Alex Jones', 'Trump') 0.9953882
+("Sundar Pichai's", 'Politico Legal') 0.9901034
+('Sundar Pichai', 'Google') 0.9866385
+('Alex Jones', 'Politico Legal') 0.97838545
+('Roger Stone', 'the House Judiciary') 0.9651535
+("Sundar Pichai's", 'Trump') 0.93801206
+('Sundar Pichai', 'YouTube') 0.9346866
+('Sundar Pichari', 'Google') 0.8813934
+('Roger Stone', 'Politico Legal') 0.8732434
+('Roger Stone', 'CRISTIANO LIMA 12/11/2018') 0.8058624
+("Sundar Pichai's", 'CRISTIANO LIMA 12/11/2018') 0.76780075
