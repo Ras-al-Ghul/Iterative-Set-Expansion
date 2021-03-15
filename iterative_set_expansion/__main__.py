@@ -4,9 +4,10 @@ import threading
 import search_scrape as sc
 import ise
 import operator
+from config import search_engine_id, jsonkey
 
 def print_usage_help():
-    print("python3 -m iterative_set_expansion <r> <t> <q> <k>")
+    print("python3 iterative_set_expansion <r> <t> <q> <k>")
     print("r - int with values 1 - Schools_Attended 2 - Work_For 3 - Live_In 4 - Top_Member_Employees")
     print("t - float between 0 and 1 indicating extraction confidence threshold")
     print("q - string seed query of plausible tuple")
@@ -25,6 +26,18 @@ def main():
         except:
             print_usage_help()
 
+    print("Search Engine Id: ", search_engine_id)
+    print("Client key: ", jsonkey)
+    if (r == 1):
+        print("Relations: per:schools_attended")
+    if (r == 2):
+        print("Relations: per:employee_of")
+    if (r == 3):
+        print("Relations: per:cities_of_residence")
+    if (r == 4):
+        print("Relations: org:top_members/employees")
+    print("Threshold: ", t)
+    print("# of tuples: ", k)
 
     no_of_extracted_tuples = 0
     visited_url = set()
@@ -34,8 +47,8 @@ def main():
     #used_queries.append(q)
 
     while(no_of_extracted_tuples < k):
-        print("===============Iteration :", iter_count,"=====================")
         print("Query tuple: ", q)
+        print("===============Iteration :", iter_count,"=====================")
         results = sc.search(q)
         results = [result for result in results if result['url'] not in visited_url]
 

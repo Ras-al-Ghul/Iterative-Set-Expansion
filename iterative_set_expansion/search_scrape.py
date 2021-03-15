@@ -5,14 +5,14 @@ from bs4 import BeautifulSoup
 from multiprocessing.dummy import Pool as ThreadPool
 from googleapiclient.discovery import build
 
-from config import search_engine_id, key
+from config import search_engine_id, jsonkey
 
 import pprint
 
 
 # Send query and get results from Google API
 def search(query_terms):
-    search_result = build("customsearch", "v1", developerKey=key)
+    search_result = build("customsearch", "v1", developerKey=jsonkey)
 
     result = search_result.cse().list(
                 q=query_terms,
