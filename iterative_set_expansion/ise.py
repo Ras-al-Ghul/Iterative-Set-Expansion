@@ -20,7 +20,9 @@ def relation_type(r):
     if (r == 2):
         return {"Type": ["per:employee_of"], "Subject": ['PERSON'], "Object": ['ORGANIZATION']}
     if (r == 3):
-        return {"Subject": ['PERSON'], "Object": ['LOCATION', 'CITY', 'STATE_OR_PROVINCE', 'COUNTRY"']}
+        return {#"Type": ["per:countries_of_residence", "per:cities_of_residence", "per:stateorprovinces_of_residence"],
+            "Type": ["per:cities_of_residence"],
+                "Subject": ['PERSON'], "Object": ['LOCATION', 'CITY', 'STATE_OR_PROVINCE', 'COUNTRY']}
     if (r == 4):
         return {"Type": ["org:top_members/employees"], "Subject": ['ORGANIZATION'], "Object": ['PERSON']}
 
@@ -62,10 +64,9 @@ def process(results, r, t):
             candidate_pairs = []
             sentence_entity_pairs = shf.create_entity_pairs(sentence, entities_of_interest)
             for ep in sentence_entity_pairs:
-                # TODO: keep subject-object pairs of the right type for the target relation (e.g., Person:Organization for the "Work_For" relation)
-                if(ep[1][1] in relation['Subject'] and ep[2][1] in relation['Object']):
+                if ep[1][1] in relation['Subject'] and ep[2][1] in relation['Object']:
                     candidate_pairs.append({"tokens": ep[0], "subj": ep[1], "obj": ep[2]})  # e1=Subject, e2=Object
-                if(ep[2][1] in relation['Subject'] and ep[1][1] in relation['Object']):
+                if ep[2][1] in relation['Subject'] and ep[1][1] in relation['Object']:
                     candidate_pairs.append({"tokens": ep[0], "subj": ep[2], "obj": ep[1]})  # e1=Object, e2=Subject
 
 
@@ -80,19 +81,18 @@ def process(results, r, t):
             predict = spanbert.predict(candidate_pairs)
             #print(predict)
             for i in range(0, len(candidate_pairs)):
-                if(predict[i][0] in relation['Type']):
+                if predict[i][0] in relation['Type']:
                     value = {
                             'Subject': candidate_pairs[i]['subj'][0],
                             'Object': candidate_pairs[i]['obj'][0],
                             'Relation': predict[i][0],
                             'Confidence': predict[i][1]}
                     print_data(sentence.text, value, t)
-                    if(value['Confidence'] >= t):
+                    if value['Confidence'] >= t:
                         bert_result.append(value)
 
-
             sentence_count += 1
-            if(sentence_count%5 == 0):
+            if sentence_count%5 == 0:
                 print("Processed", sentence_count," sentences")
 
     return bert_result

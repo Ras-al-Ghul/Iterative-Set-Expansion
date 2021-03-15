@@ -1,0 +1,162 @@
+Microsoft Windows [Version 10.0.19041.867]
+(c) 2020 Microsoft Corporation. All rights reserved.
+
+(base) C:\Users\nidhe\Documents\Columbia\2021_Spring\AdvanceDatabases\Project2\Iterative-Set-Expansion>python iterative_set_expansion 2 0.7 "sundar pichai google" 10
+===============Iteration : 0 =====================
+Query tuple:  sundar pichai google
+Extracting and truncating the content to 20,000 characters.
+Loading pre-trained spanBERT from C:\Users\nidhe\Documents\Columbia\2021_Spring\AdvanceDatabases\Project2\Iterative-Set-Expansion\iterative_set_expansion/pretrained_spanbert
+url ( 0 /10) https://en.wikipedia.org/wiki/Sundar_Pichai
+========Extracted Relation============
+Sentence : In 2013, Pichai added Android to the list of Google products that he oversaw.
+Confidence: 0.7732075 Subject: Pichai Object: Google
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : Pichai was selected to become the next CEO of Google on August 10, 2015, after previously being appointed Product Chief by CEO, Larry Page.
+Confidence: 0.9970765 Subject: Pichai Object: Google
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : Pichai was selected to become the next CEO of Google on August 10, 2015, after previously being appointed Product Chief by CEO, Larry Page.
+Confidence: 0.99728286 Subject: Larry Page Object: Google
+Adding to set of extracted relations
+=================
+Processed 5  sentences
+========Extracted Relation============
+Sentence : Pichai was born in Chennai, Tamil Nadu, India.[6][7][8]His mother, Lakshmi, was a stenographer, and his father, Regunatha Pichai, was an electrical engineer at GEC, the Brit
+ish conglomerate.
+Confidence: 0.94423187 Subject: Regunatha Pichai Object: GEC
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : Pichai joined Google in 2004, where he led the product management and innovation efforts for a suite of Google's client software products, including Google Chrome[18] and Ch
+rome OS, as well as being largely responsible for Google Drive.
+Confidence: 0.9740768 Subject: Pichai Object: Google
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : On March 13, 2013, Pichai added Android to the list of Google products that he oversaw.
+Confidence: 0.7732075 Subject: Pichai Object: Google
+Adding to set of extracted relations
+=================
+Processed 10  sentences
+========Extracted Relation============
+Sentence : Pichai was selected to become the next CEO of Google on August 10, 2015[27] after previously being appointed Product Chief by CEO, Larry Page.
+Confidence: 0.9970765 Subject: Pichai Object: Google
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : Pichai was selected to become the next CEO of Google on August 10, 2015[27] after previously being appointed Product Chief by CEO, Larry Page.
+Confidence: 0.9971773 Subject: Larry Page Object: Google
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : Pichai had been suggested as a contender for Microsoft's CEO in 2014, a position that was eventually given to Satya Nadella.[30][31]
+Confidence: 0.8829768 Subject: Satya Nadella.[30][31 Object: Microsoft
+Adding to set of extracted relations
+=================
+Processed 15  sentences
+url ( 1 /10) https://twitter.com/sundarpichai?lang=en
+url ( 2 /10) https://blog.google/inside-google/company-announcements/commitments-racial-equity/
+========Extracted Relation============
+Sentence : That includes our Chief Diversity Officer Melonie Parker and the Employee Engagement team, our Equity Project Management Office working in partnership with our Black Leaders
+hip Advisory Group and members of our Black Googler Network, and everyone who has stepped up with ideas on how we can build a better workplace, and, in turn, better products for the wo
+rld.
+Confidence: 0.97068644 Subject: Melonie Parker Object: Equity Project Management Office
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : That includes our Chief Diversity Officer Melonie Parker and the Employee Engagement team, our Equity Project Management Office working in partnership with our Black Leaders
+hip Advisory Group and members of our Black Googler Network, and everyone who has stepped up with ideas on how we can build a better workplace, and, in turn, better products for the wo
+rld.
+Confidence: 0.89033324 Subject: Melonie Parker Object: Black Leadership Advisory Group
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : That includes our Chief Diversity Officer Melonie Parker and the Employee Engagement team, our Equity Project Management Office working in partnership with our Black Leaders
+hip Advisory Group and members of our Black Googler Network, and everyone who has stepped up with ideas on how we can build a better workplace, and, in turn, better products for the wo
+rld.
+Confidence: 0.9671834 Subject: Melonie Parker Object: Black Googler Network
+Adding to set of extracted relations
+=================
+url ( 3 /10) https://www.youtube.com/watch?v=o6zfp6lRw2E
+url ( 4 /10) https://blog.google/perspectives/sundar-pichai/
+========Extracted Relation============
+Sentence : CEO of Google and Alphabet Sundar is the CEO of Google and Alphabet and serves on Alphabet’s Board of Directors.
+Confidence: 0.9960083 Subject: Alphabet Sundar Object: Google
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : CEO of Google and Alphabet Sundar is the CEO of Google and Alphabet and serves on Alphabet’s Board of Directors.
+Confidence: 0.99620396 Subject: Alphabet Sundar Object: Google
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : CEO of Google and Alphabet Sundar is the CEO of Google and Alphabet and serves on Alphabet’s Board of Directors.
+Confidence: 0.9962334 Subject: Alphabet Sundar Object: Alphabet’s Board of Directors
+Adding to set of extracted relations
+=================
+url ( 5 /10) https://www.youtube.com/watch?v=mpfxsvBPWEs
+url ( 6 /10) https://www.cnbc.com/2019/02/01/how-google-ceos-brilliant-answer-in-a-job-interview-helped-him-get-hired.html
+========Extracted Relation============
+Sentence : Laszlo Bock, Google's former senior VP of people operations, calls it one of the top qualities he looks for in a candidate.
+Confidence: 0.9918338 Subject: Laszlo Bock Object: Google
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : Laszlo Bock, Google's former senior VP of people operations, calls it one of the top qualities he looks for in a candidate.
+Confidence: 0.9970813 Subject: Laszlo Bock Object: VP
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : Tom Popomaronis is the Senior Director of Product Innovation at the Hawkins Group.
+Confidence: 0.9959684 Subject: Tom Popomaronis Object: the Hawkins Group
+Adding to set of extracted relations
+=================
+url ( 7 /10) https://www.blog.google/technology/ai/ai-principles/
+url ( 8 /10) https://www.cnbc.com/2018/12/11/google-ceo-sundar-pichai-testifies-before-congress-on-bias-privacy.html
+========Extracted Relation============
+Sentence : This is the first time Pichai has appeared before Congress since Google declined to send him or Alphabet CEO Larry Page to a hearing on foreign election meddling earlier thi
+s year.
+Confidence: 0.9760649 Subject: Larry Page Object: Google
+Adding to set of extracted relations
+=================
+Processed 5  sentences
+========Extracted Relation============
+Sentence : One of the first specific questions about Google's plans in China came from Rep. Sheila Jackson Lee (D-Tx.) who expressed concern that Google would aid in the oppression of
+Chinese people "looking for a lifeline of freedom and democracy."
+Confidence: 0.98604214 Subject: Sheila Jackson Lee Object: Google
+Adding to set of extracted relations
+=================
+Processed 10  sentences
+Processed 15  sentences
+url ( 9 /10) https://www.britannica.com/biography/Sundar-Pichai
+========Extracted Relation============
+Sentence : Sundar Pichai, in full Pichai Sundararajan,  (born July 12, 1972, Madras [now Chennai], Tamil Nadu, India), Indian-born American executive who was CEO of both Google, Inc. (
+2015– ), and its holding company, Alphabet Inc. (2019– ).
+Confidence: 0.9971136 Subject: Pichai Sundararajan Object: Google, Inc.
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : Therefore, when Google cofounders Larry Page and Sergey Brin announced the creation of Alphabet Inc., in August 2015, it came as no surprise to industry insiders that Pichai
+ was named CEO of Google, which was reorganized as a subsidiary.
+Confidence: 0.98404586 Subject: Larry Page Object: Google
+Adding to set of extracted relations
+=================
+('Larry Page', 'Google') 0.99728286
+('Pichai Sundararajan', 'Google, Inc.') 0.9971136
+('Laszlo Bock', 'VP') 0.9970813
+('Pichai', 'Google') 0.9970765
+('Alphabet Sundar', 'Alphabet’s Board of Directors') 0.9962334
+('Alphabet Sundar', 'Google') 0.99620396
+('Tom Popomaronis', 'the Hawkins Group') 0.9959684
+('Laszlo Bock', 'Google') 0.9918338
+('Sheila Jackson Lee', 'Google') 0.98604214
+('Melonie Parker', 'Equity Project Management Office') 0.97068644
+('Melonie Parker', 'Black Googler Network') 0.9671834
+('Regunatha Pichai', 'GEC') 0.94423187
+('Melonie Parker', 'Black Leadership Advisory Group') 0.89033324
+('Satya Nadella.[30][31', 'Microsoft') 0.8829768
+
+(base) C:\Users\nidhe\Documents\Columbia\2021_Spring\AdvanceDatabases\Project2\Iterative-Set-Expansion>

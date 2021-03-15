@@ -1,0 +1,146 @@
+Microsoft Windows [Version 10.0.19041.867]
+(c) 2020 Microsoft Corporation. All rights reserved.
+
+(base) C:\Users\nidhe\Documents\Columbia\2021_Spring\AdvanceDatabases\Project2\Iterative-Set-Expansion>python iterative_set_expansion 4 0.7 "bill gates microsoft" 10
+===============Iteration : 0 =====================
+Query tuple:  bill gates microsoft
+Extracting and truncating the content to 20,000 characters.
+Loading pre-trained spanBERT from C:\Users\nidhe\Documents\Columbia\2021_Spring\AdvanceDatabases\Project2\Iterative-Set-Expansion\iterative_set_expansion/pretrained_spanbert
+url ( 0 /10) https://en.wikipedia.org/wiki/Bill_Gates
+========Extracted Relation============
+Sentence : He stepped down as chairman of Microsoft in February 2014 and assumed a new post as technology adviser to support the newly appointed CEO Satya Nadella.[11]
+Confidence: 0.9918773 Subject: Microsoft Object: Satya Nadella.[11
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : In March 2020, Gates left his board positions at Microsoft and Berkshire Hathaway to focus on his philanthropic endeavors including climate change, global health and develop
+ment, and education.[12] Since 1987, he has been included in the Forbes list of the world's wealthiest people.[13][14] From 1995 to 2017, he held the Forbes title of the richest person
+ in the world all but four of those years.[15]
+Confidence: 0.96811634 Subject: Microsoft Object: Gates
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : In October 2017, he was surpassed by Amazon founder and CEO Jeff Bezos, who had an estimated net worth of US$90.6 billion compared to Gates's net worth of US$89.9 billion at
+ the time.[16]
+Confidence: 0.98978245 Subject: Gates Object: Jeff Bezos
+Adding to set of extracted relations
+=================
+Processed 5  sentences
+Processed 10  sentences
+========Extracted Relation============
+Sentence : Years later, Ballmer succeeded Gates as Microsoft's CEO and maintained that position from 2000 until his resignation in 2014.[43][44] Gates devised an algorithm for pancake
+sorting as a solution to one of a series of unsolved problems[45] presented in a combinatorics class by professor Harry Lewis.
+Confidence: 0.9903008 Subject: Microsoft Object: Ballmer
+Adding to set of extracted relations
+=================
+Processed 15  sentences
+Processed 20  sentences
+========Extracted Relation============
+Sentence : IBM representative Jack Sams mentioned the licensing difficulties during a subsequent meeting with Gates and asked if Microsoft could provide an operating system.
+Confidence: 0.891942 Subject: IBM Object: Jack Sams
+Adding to set of extracted relations
+=================
+Processed 25  sentences
+Processed 30  sentences
+========Extracted Relation============
+Sentence : In an interview that was held at the TED conference in March 2015, with Baidu's CEO, Robin Li, Gates said he would "highly recommend" Nick Bostrom's recent work, Superintell
+igence: Paths, Dangers, Strategies.[87]
+Confidence: 0.83987564 Subject: Baidu Object: Robin Li
+Adding to set of extracted relations
+=================
+url ( 1 /10) https://www.gatesnotes.com/
+url ( 2 /10) https://twitter.com/billgates?lang=en
+url ( 3 /10) https://news.microsoft.com/2020/03/13/microsoft-announces-change-to-its-board-of-directors/
+url ( 4 /10) https://www.nytimes.com/2020/03/13/technology/bill-gates-microsoft-board.html
+========Extracted Relation============
+Sentence : By Daisuke Wakabayashi and Steve Lohr SAN FRANCISCO — Bill Gates is stepping down from the board of Microsoft, the software giant he helped found more than four decades ago.
+
+Confidence: 0.6790237 Subject: Microsoft Object: Daisuke Wakabayashi
+Confidence is lower than threshold confidence. Ignoring this.
+=================
+Processed 5  sentences
+========Extracted Relation============
+Sentence : Mr. Gates joined the Berkshire Hathaway board in 2004.
+Confidence: 0.9807724 Subject: Berkshire Hathaway Object: Gates
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : The conglomerate has nominated Kenneth Chenault, the former chief executive of American Express, to replace Mr. Gates on the board.
+Confidence: 0.9890002 Subject: American Express Object: Gates
+Adding to set of extracted relations
+=================
+Processed 10  sentences
+========Extracted Relation============
+Sentence : Daniel Ives, managing director of equity research at Wedbush Securities, said in a research note that Mr. Gates’s stepping down from the Microsoft board was not a surprise a
+nd that it was a vote of confidence for Mr. Nadella and the direction of the company.
+Confidence: 0.9648241 Subject: Wedbush Securities Object: Daniel Ives
+Adding to set of extracted relations
+=================
+url ( 5 /10) https://www.britannica.com/biography/Bill-Gates
+Processed 5  sentences
+========Extracted Relation============
+Sentence : After a short transition period, Gates relinquished day-to-day oversight of Microsoft in June 2008—although he remained chairman of the board—in order to devote more time to
+ the Bill & Melinda Gates Foundation.
+Confidence: 0.8306174 Subject: the Bill & Melinda Gates Foundation Object: Gates
+Adding to set of extracted relations
+=================
+url ( 6 /10) https://www.technologyreview.com/2021/02/14/1018296/bill-gates-climate-change-beef-trees-microsoft/
+========Extracted Relation============
+Sentence : The Microsoft cofounder, who is now cochair of the Bill and Melinda Gates Foundation and chair of the investment fund Breakthrough Energy Ventures, sticks to his past argume
+nt that we’ll need numerous energy breakthroughs to have any hope of cleaning up all parts of the economy and the poorest parts of the world.
+Confidence: 0.8827393 Subject: Microsoft Object: Bill
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : The Microsoft cofounder, who is now cochair of the Bill and Melinda Gates Foundation and chair of the investment fund Breakthrough Energy Ventures, sticks to his past argume
+nt that we’ll need numerous energy breakthroughs to have any hope of cleaning up all parts of the economy and the poorest parts of the world.
+Confidence: 0.9880424 Subject: Melinda Gates Foundation Object: Bill
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : The Microsoft cofounder, who is now cochair of the Bill and Melinda Gates Foundation and chair of the investment fund Breakthrough Energy Ventures, sticks to his past argume
+nt that we’ll need numerous energy breakthroughs to have any hope of cleaning up all parts of the economy and the poorest parts of the world.
+Confidence: 0.98673356 Subject: Breakthrough Energy Ventures Object: Bill
+Adding to set of extracted relations
+=================
+url ( 7 /10) https://www.linkedin.com/in/williamhgates
+url ( 8 /10) https://www.forbes.com/profile/bill-gates/
+url ( 9 /10) https://www.biography.com/business-figure/bill-gates
+Processed 5  sentences
+Processed 10  sentences
+Processed 15  sentences
+========Extracted Relation============
+Sentence : In mid-1981, Gates and Allen incorporated Microsoft, and Gates was appointed president and chairman of the board.
+Confidence: 0.94249374 Subject: Gates Object: Allen
+Adding to set of extracted relations
+=================
+Processed 20  sentences
+Processed 25  sentences
+========Extracted Relation============
+Sentence : Longtime Microsoft CEO Steve Ballmer was replaced by 46-year-old Satya Nadella.
+Confidence: 0.98829216 Subject: Microsoft Object: Steve Ballmer
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : Longtime Microsoft CEO Steve Ballmer was replaced by 46-year-old Satya Nadella.
+Confidence: 0.9913109 Subject: Microsoft Object: Satya Nadella
+Adding to set of extracted relations
+=================
+('Microsoft', 'Satya Nadella.[11') 0.9918773
+('Microsoft', 'Satya Nadella') 0.9913109
+('Microsoft', 'Ballmer') 0.9903008
+('Gates', 'Jeff Bezos') 0.98978245
+('American Express', 'Gates') 0.9890002
+('Microsoft', 'Steve Ballmer') 0.98829216
+('Melinda Gates Foundation', 'Bill') 0.9880424
+('Breakthrough Energy Ventures', 'Bill') 0.98673356
+('Berkshire Hathaway', 'Gates') 0.9807724
+('Microsoft', 'Gates') 0.96811634
+('Wedbush Securities', 'Daniel Ives') 0.9648241
+('Gates', 'Allen') 0.94249374
+('IBM', 'Jack Sams') 0.891942
+('Microsoft', 'Bill') 0.8827393
+('Baidu', 'Robin Li') 0.83987564
+('the Bill & Melinda Gates Foundation', 'Gates') 0.8306174
+
+(base) C:\Users\nidhe\Documents\Columbia\2021_Spring\AdvanceDatabases\Project2\Iterative-Set-Expansion>

@@ -30,8 +30,8 @@ def main():
     visited_url = set()
     iter_count = 0
     final_result = dict()
-    used_queries = set()
-    used_queries.add(q)
+    used_queries = []
+    #used_queries.append(q)
 
     while(no_of_extracted_tuples < k):
         print("===============Iteration :", iter_count,"=====================")
@@ -62,15 +62,16 @@ def main():
 
         #print(final_result)
         final_result_sorted = dict(sorted(final_result.items(), key=operator.itemgetter(1), reverse=True))
-        #print(final_result_sorted)
         no_of_extracted_tuples = len(final_result_sorted)
 
-        if(no_of_extracted_tuples < k):
-            for result in final_result_sorted.keys():
-                if result not in used_queries:
-                    q = ' '.join(result)
-                    used_queries.add(q)
-                    break;
+        #print(final_result_sorted.keys())
+
+        used_queries.append(q)
+        for result in final_result_sorted.keys():
+            query = ' '.join(result)
+            if query not in used_queries:
+                q = query
+                break
 
         iter_count += 1
 
