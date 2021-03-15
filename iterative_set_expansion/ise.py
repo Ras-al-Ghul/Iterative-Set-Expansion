@@ -52,9 +52,11 @@ def process(results, r, t):
         result = results[idx]
         print('url (', idx, '/10)', result['url'])
         doc = nlp(result["content"])
+        print("Length of content :", len(result["content"]))
 
         print("ISE processing...")
         sentence_count = 0
+
         for sentence in doc.sents:
             print("\n\nProcessing sentence: {}".format(sentence))
             print("Tokenized sentence: {}".format([token.text for token in sentence]))
