@@ -7,6 +7,8 @@ from googleapiclient.discovery import build
 
 from config import search_engine_id, key
 
+import pprint
+
 
 # Send query and get results from Google API
 def search(query_terms):
@@ -22,6 +24,7 @@ def search(query_terms):
         'url': item.get('link') if item.get('link') is not None else ''}
         for idx, item in enumerate(items)]
 
+    #print(pretty_results)
     return pretty_results
 
 
@@ -30,13 +33,15 @@ def get_document_content(url):
     data = ""
     try:
         html_doc = requests.get(url, timeout=1).text
-
-        soup = BeautifulSoup(html_doc, 'html.parser')
+        #pprint(html_doc.content)
+        soup = BeautifulSoup(html_doc, 'html5lib')
         data = soup.findAll('p')
         data = [p.get_text().replace('\n', '').replace('\t', '') for p in data]
-        data = " ".join(data)
+        data = " ".join(data) if data else " "
+        #data = re.sub(r'[^\w\s]', '', data)
         # trim data if > 20000 chars
-        data = data[:20000]
+        if len(data) > 20000:
+            data = data[:20000]
     except:
         # timeout exception if resutls are not fetched
         pass

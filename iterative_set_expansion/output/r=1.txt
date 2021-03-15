@@ -1,0 +1,197 @@
+Microsoft Windows [Version 10.0.19041.867]
+(c) 2020 Microsoft Corporation. All rights reserved.
+
+(base) C:\Users\nidhe\Documents\Columbia\2021_Spring\AdvanceDatabases\Project2\Iterative-Set-Expansion>python iterative_set_expansion 1 0.7 "mark zuckerberg harvard" 10
+===============Iteration : 0 =====================
+Query tuple:  mark zuckerberg harvard
+Extracting and truncating the content to 20,000 characters.
+Loading pre-trained spanBERT from C:\Users\nidhe\Documents\Columbia\2021_Spring\AdvanceDatabases\Project2\Iterative-Set-Expansion\iterative_set_expansion/pretrained_spanbert
+url ( 0 /10) https://en.wikipedia.org/wiki/Mark_Zuckerberg
+========Extracted Relation============
+Sentence : Born in White Plains, New York, Zuckerberg attended Harvard University, where he launched the Facebook social networking service from his dormitory room on February 4, 2004,
+ with college roommates Eduardo Saverin, Andrew McCollum, Dustin Moskovitz, and Chris Hughes.[6] Originally launched to select college campuses, the site expanded rapidly and eventuall
+y beyond colleges, reaching one billion users by 2012.
+Confidence: 0.56599635 Subject: Dustin Moskovitz Object: Harvard University
+Confidence is lower than threshold confidence. Ignoring this.
+=================
+========Extracted Relation============
+Sentence : Born in White Plains, New York, Zuckerberg attended Harvard University, where he launched the Facebook social networking service from his dormitory room on February 4, 2004,
+ with college roommates Eduardo Saverin, Andrew McCollum, Dustin Moskovitz, and Chris Hughes.[6] Originally launched to select college campuses, the site expanded rapidly and eventuall
+y beyond colleges, reaching one billion users by 2012.
+Confidence: 0.5837158 Subject: Chris Hughes.[6 Object: Harvard University
+Confidence is lower than threshold confidence. Ignoring this.
+=================
+Processed 5  sentences
+========Extracted Relation============
+Sentence : Zuckerberg took a graduate course in the subject at Mercy College near his home while still in high school.
+Confidence: 0.9726519 Subject: Zuckerberg Object: Mercy College
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : The New Yorker noted that by the time Zuckerberg began classes at Harvard in 2002, he had already achieved a "reputation as a programming prodigy."
+Confidence: 0.73079836 Subject: Zuckerberg Object: Harvard
+Adding to set of extracted relations
+=================
+Processed 10  sentences
+========Extracted Relation============
+Sentence : On February 4, 2004, Zuckerberg launched Facebook from his Harvard dormitory room.[41][42] An earlier inspiration for Facebook may have come from Phillips Exeter Academy, th
+e prep school from which Zuckerberg graduated in 2002.
+Confidence: 0.7837578 Subject: Zuckerberg Object: Facebook
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : On February 4, 2004, Zuckerberg launched Facebook from his Harvard dormitory room.[41][42] An earlier inspiration for Facebook may have come from Phillips Exeter Academy, th
+e prep school from which Zuckerberg graduated in 2002.
+Confidence: 0.96546745 Subject: Zuckerberg Object: Harvard
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : On February 4, 2004, Zuckerberg launched Facebook from his Harvard dormitory room.[41][42] An earlier inspiration for Facebook may have come from Phillips Exeter Academy, th
+e prep school from which Zuckerberg graduated in 2002.
+Confidence: 0.83589274 Subject: Zuckerberg Object: Facebook
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : On February 4, 2004, Zuckerberg launched Facebook from his Harvard dormitory room.[41][42] An earlier inspiration for Facebook may have come from Phillips Exeter Academy, th
+e prep school from which Zuckerberg graduated in 2002.
+Confidence: 0.96942276 Subject: Zuckerberg Object: Phillips Exeter Academy
+Adding to set of extracted relations
+=================
+Processed 15  sentences
+Processed 20  sentences
+Processed 25  sentences
+Processed 30  sentences
+Processed 35  sentences
+Processed 40  sentences
+========Extracted Relation============
+Sentence : He also changed his Facebook profile picture to extend his support to Digital India to help rural communities stay connected to the internet.[81] Harvard students Cameron Wi
+nklevoss, Tyler Winklevoss, and Divya Narendra accused Zuckerberg of intentionally making them believe he would help them build a social network called HarvardConnection.com (later cal
+led ConnectU).[82] They filed a lawsuit in 2004; it was dismissed on a technicality on March 28, 2007.
+Confidence: 0.8532336 Subject: Cameron Winklevoss Object: Harvard
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : He also changed his Facebook profile picture to extend his support to Digital India to help rural communities stay connected to the internet.[81] Harvard students Cameron Wi
+nklevoss, Tyler Winklevoss, and Divya Narendra accused Zuckerberg of intentionally making them believe he would help them build a social network called HarvardConnection.com (later cal
+led ConnectU).[82] They filed a lawsuit in 2004; it was dismissed on a technicality on March 28, 2007.
+Confidence: 0.88099504 Subject: Tyler Winklevoss Object: Harvard
+Adding to set of extracted relations
+=================
+Processed 45  sentences
+url ( 1 /10) https://news.harvard.edu/gazette/story/2017/05/mark-zuckerbergs-speech-as-written-for-harvards-class-of-2017/
+Processed 5  sentences
+========Extracted Relation============
+Sentence : When Priscilla graduated from Harvard she became a teacher, and before she’d do education work with me, she told me I needed to teach a class.
+Confidence: 0.99168533 Subject: Priscilla Object: Harvard
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : I met David Razu Aznar, graduating from the Kennedy School today.
+Confidence: 0.9921025 Subject: David Razu Aznar Object: the Kennedy School
+Adding to set of extracted relations
+=================
+url ( 2 /10) https://www.youtube.com/watch?v=BmYv8XGl-YU
+url ( 3 /10) https://www.bostonglobe.com/metro/2018/04/11/mark-zuckerberg-couldn-stop-mentioning-his-harvard-dorm-room-during-facebook-testimony/slW4rCXyIdyctzEuB93J4L/story.html
+Processed 5  sentences
+Processed 10  sentences
+url ( 4 /10) https://www.youtube.com/watch?v=gsefnhTK5lc
+url ( 5 /10) https://www.wbur.org/news/2017/05/25/zuckerberg-harvard-commencement
+========Extracted Relation============
+Sentence : Zuckerberg, who left college in 2005 after his sophomore year to build his infant social media platform into the multibillion-dollar company it's become, received an honorar
+y degree from Harvard on Thursday.
+Confidence: 0.9721678 Subject: Zuckerberg Object: Harvard
+Adding to set of extracted relations
+=================
+Processed 5  sentences
+url ( 6 /10) https://www.youtube.com/watch?v=yqr6yLyuHQA
+url ( 7 /10) https://www.cnbc.com/2017/05/25/mark-zuckerberg-returns-to-the-harvard-dorm-where-facebook-was-born.html
+url ( 8 /10) https://www.youtube.com/watch?v=zW_0b1Vy-Ts
+url ( 9 /10) https://www.thecrimson.com/article/2003/11/19/facemash-creator-survives-ad-board-the/
+('David Razu Aznar', 'the Kennedy School') 0.9921025
+('Priscilla', 'Harvard') 0.99168533
+('Zuckerberg', 'Mercy College') 0.9726519
+('Zuckerberg', 'Harvard') 0.9721678
+('Zuckerberg', 'Phillips Exeter Academy') 0.96942276
+('Tyler Winklevoss', 'Harvard') 0.88099504
+('Cameron Winklevoss', 'Harvard') 0.8532336
+('Zuckerberg', 'Facebook') 0.83589274
+===============Iteration : 1 =====================
+Query tuple:  David Razu Aznar the Kennedy School
+Extracting and truncating the content to 20,000 characters.
+Loading pre-trained spanBERT from C:\Users\nidhe\Documents\Columbia\2021_Spring\AdvanceDatabases\Project2\Iterative-Set-Expansion\iterative_set_expansion/pretrained_spanbert
+url ( 0 /10) https://ash.harvard.edu/people/david-razu-aznar
+========Extracted Relation============
+Sentence : Democratic GovernanceInnovations in American GovernmentRajawali Foundation Institute of AsiaPublicationsFor StudentsFellowshipsExecutive EducationNews & EventsAboutNewslette
+r SignupHarvard Kennedy School Contact UsPrivacyEU/EEA Privacy DisclosuresLand
+Confidence: 0.6326472 Subject: EventsAboutNewsletter SignupHarvard Kennedy Object: UsPrivacyEU
+Confidence is lower than threshold confidence. Ignoring this.
+=================
+========Extracted Relation============
+Sentence : Democratic GovernanceInnovations in American GovernmentRajawali Foundation Institute of AsiaPublicationsFor StudentsFellowshipsExecutive EducationNews & EventsAboutNewslette
+r SignupHarvard Kennedy School Contact UsPrivacyEU/EEA Privacy DisclosuresLand
+Confidence: 0.86149955 Subject: EventsAboutNewsletter SignupHarvard Kennedy Object: EEA Privacy DisclosuresLand
+Adding to set of extracted relations
+=================
+url ( 1 /10) https://blogs.iadb.org/ciudades-sostenibles/en/author/drazuaznar/
+========Extracted Relation============
+Sentence : Ciudades Sostenibles Educated as an economist and with an MSc in Development Management from the London School of Economics and a Master’s degree in Public Administration fr
+om Harvard University, David Razú has worked in urban politics and policymaking for the last 10 years.
+Confidence: 0.9637449 Subject: Ciudades Sostenibles Object: Development Management
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : Ciudades Sostenibles Educated as an economist and with an MSc in Development Management from the London School of Economics and a Master’s degree in Public Administration fr
+om Harvard University, David Razú has worked in urban politics and policymaking for the last 10 years.
+Confidence: 0.98390514 Subject: Ciudades Sostenibles Object: the London School of Economics
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : Ciudades Sostenibles Educated as an economist and with an MSc in Development Management from the London School of Economics and a Master’s degree in Public Administration fr
+om Harvard University, David Razú has worked in urban politics and policymaking for the last 10 years.
+Confidence: 0.97956187 Subject: Ciudades Sostenibles Object: Public Administration
+Adding to set of extracted relations
+=================
+========Extracted Relation============
+Sentence : Ciudades Sostenibles Educated as an economist and with an MSc in Development Management from the London School of Economics and a Master’s degree in Public Administration fr
+om Harvard University, David Razú has worked in urban politics and policymaking for the last 10 years.
+Confidence: 0.99165505 Subject: Ciudades Sostenibles Object: Harvard University
+Adding to set of extracted relations
+=================
+url ( 2 /10) https://www.nbcboston.com/news/local/facebooks-zuckerberg-to-give-harvard-graduation-speech/19471/
+url ( 3 /10) https://www.iohbhutan.org/training
+url ( 4 /10) https://www.hks.harvard.edu/more/student-life/test-student-stories/attending-hks-mid-career-student
+url ( 5 /10) https://es.wikipedia.org/wiki/David_Raz%C3%BA_Aznar
+Processed 5  sentences
+Processed 10  sentences
+url ( 6 /10) https://www.entrepreneur.com/article/294976
+========Extracted Relation============
+Sentence : When Priscilla graduated from Harvard she became a teacher, and before she'd do education work with me, she told me I needed to teach a class.
+Confidence: 0.99168533 Subject: Priscilla Object: Harvard
+Adding to set of extracted relations
+=================
+Processed 5  sentences
+========Extracted Relation============
+Sentence : I met David Razu Aznar, graduating from the Kennedy School today.
+Confidence: 0.9921025 Subject: David Razu Aznar Object: the Kennedy School
+Adding to set of extracted relations
+=================
+url ( 7 /10) https://www.facebook.com/profile.php/?id=100012613515400
+url ( 8 /10) https://www.eluniversal.com.mx/articulo/nacion/sociedad/2017/05/26/zuckerberg-reconoce-razu-en-harvard
+Processed 5  sentences
+url ( 9 /10) https://www.fundssociety.com/es/noticias/nombramientos/david-razu-aznar-es-el-nuevo-director-general-de-afore-xxi-banorte
+Processed 5  sentences
+('David Razu Aznar', 'the Kennedy School') 0.9921025
+('Priscilla', 'Harvard') 0.99168533
+('Ciudades Sostenibles', 'Harvard University') 0.99165505
+('Ciudades Sostenibles', 'the London School of Economics') 0.98390514
+('Ciudades Sostenibles', 'Public Administration') 0.97956187
+('Zuckerberg', 'Mercy College') 0.9726519
+('Zuckerberg', 'Harvard') 0.9721678
+('Zuckerberg', 'Phillips Exeter Academy') 0.96942276
+('Ciudades Sostenibles', 'Development Management') 0.9637449
+('Tyler Winklevoss', 'Harvard') 0.88099504
+('EventsAboutNewsletter SignupHarvard Kennedy', 'EEA Privacy DisclosuresLand') 0.86149955
+('Cameron Winklevoss', 'Harvard') 0.8532336
+('Zuckerberg', 'Facebook') 0.83589274
+
+(base) C:\Users\nidhe\Documents\Columbia\2021_Spring\AdvanceDatabases\Project2\Iterative-Set-Expansion>
